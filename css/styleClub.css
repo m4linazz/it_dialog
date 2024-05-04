@@ -1,0 +1,26 @@
+* {
+    margin: 0 auto;
+}
+header {
+    background: url("../images/ItdialogClub.jpeg") no-repeat center;
+    position: absolute;
+    min-width: 100%;
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-header {
+    
+}
+.center-header {
+    display: flex;
+    gap: 28px;
+    justify-content: space-between ;
+}
+.right-header {
+    background-color: #2B71C2;
+    border-radius: 12px;
+    height: 56px;
+    padding: 0px 28px 0px 28px;
+}
