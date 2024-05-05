@@ -1,42 +1,87 @@
 * {
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
+    
 }
 
 .container {
-    width: 1280px;
+    width: 1224px;
     max-width: 100%;
     margin: 0 auto;
 }
 
+/*стили текстов*/
 h1 {
     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 3.5rem;
     color: white;
+}
+
+h2 {
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: rgb(0, 0, 0);
 }
 
 h5 {
     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
 }
 
 .body_small {
     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
 }
 
-.button_text {
+.button_text_blue {
+    padding: 0px 28px 0px 28px;
     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
 }
 
+.button_text_white {
+    padding: 0px 20px 0px 20px;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+/*кнопки*/
+.button_blue {
+    height: 56px;
+    background-color: #2B71C2;
+    border-radius: 12px;
+    border: none;
+}
+
+.button_white {
+    height: 40px;
+    background-color: #F5F8FC;
+    border-radius: 12px;
+    border: 1px solid #2B71C2;
+}
+
+/*шапка*/
+.logo {
+    display: flex;
+    justify-content: center;
+}
 
 .header {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(../images/background_header.jpg) no-repeat center;
@@ -47,7 +92,6 @@ h5 {
 }
 
 .title_content {
-   height: 277px;
    gap: 40px;
    display: flex;
    flex-direction: column;
@@ -58,25 +102,69 @@ h5 {
    text-align: center;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+}
+
 .header-content {
-    height: 560px;
+    padding: 80px 108px 80px 108px;
+    height: 590px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .data_adress {
-    gap:16px;
-    height: 57px;
+    gap: 16px;
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.down_header {
+    width: 1133px;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.button_header {
-    width: 151px;
-    height: 56px;
-    background-color: #2B71C2;
-    border-radius: 12px;
-    border: none;
+/*Что такое ИТ Диалог*/
+.what_is_it_dialog {
+    padding:56px 0 56px 0;
+}
+
+.blocks_it {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.block_it {
+    height:200px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.block_it1 {
+    width:392px;
+    height:240px;
+    background-image:url(../images/Item-About1.jpg);
+}
+
+.block_it2 {
+    width:392px;
+    height:240px;
+    background-image:url(../images/Item-About2.jpg);
+}
+
+.block_it3 {
+    width:392px;
+    height:240px;
+    background-image:url(../images/Item-About3.jpg);
 }
