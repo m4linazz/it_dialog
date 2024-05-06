@@ -53,6 +53,13 @@ h5 {
     color: white;
 }
 
+.body_large {
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: white;
+}
+
 .button_text_blue {
     padding: 0px 28px 0px 28px;
     font-family: "Wix Madefor Display", sans-serif;
