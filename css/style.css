@@ -82,6 +82,7 @@ h5 {
     background-color: #2B71C2;
     border-radius: 12px;
     border: none;
+    cursor: pointer;
 }
 
 .button_white {
@@ -89,7 +90,9 @@ h5 {
     background-color: #F5F8FC;
     border-radius: 12px;
     border: 1px solid #2B71C2;
+    cursor: pointer;
 }
+
 
 /*шапка*/
 .logo {
@@ -190,20 +193,14 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    height: 951px;
-    padding: 56px 108px 56px 108px;
-    opacity: 0px;
+    padding: 56px 0 56px 0;
 }
 
-.face_club {
-    padding:56px 0 56px 0;
-}
 .blocks_face {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    gap: 24px;
     margin-top: 40px;
 }
 
@@ -212,25 +209,25 @@ h5 {
     padding:20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;  
     gap: 16px;
+  
 }
 
-.block_face1 {
+.block_faces {
     width: 288px;
     border-radius: 20px;
-    opacity: 0px;
     background-color: #ffffff;
 }
 
 
-.block_face1 h4{   
+.block_faces h4{   
     width: 248px;
     height: 24px;
     text-align: center;
 }
 
-.block_face1 div img{   
+.block_faces div img{   
     display:flex;
     justify-content: center; 
     width: 144px; 
@@ -238,192 +235,6 @@ h5 {
     padding-right: 52px;
     padding-left: 52px;
     padding-bottom: 20px;
-
-}
-
-.block_face2 {
-    width: 288px;
-    border-radius: 20px;
-    opacity: 0px;
-    background-color: #ffffff;
-}
-
-
-.block_face2 h4{   
-    width: 248px;
-    height: 24px;
-    text-align: center;
-}
-
-.block_face2 div img{   
-    display:flex;
-    justify-content: center; 
-    width: 144px; 
-    height: 144px;
-    padding-right: 52px;
-    padding-left: 52px;
-    padding-bottom: 20px;
-
-}
-
-
-.block_face3 {
-    width: 288px;
-    gap: 28px;
-    border-radius: 20px;
-    opacity: 0px;
-    background-color: #ffffff;
-}
-
-
-.block_face3 h4{   
-    width: 248px;
-    height: 24px;
-    text-align: center;
-}
-
-.block_face3 div img{   
-    display:flex;
-    justify-content: center; 
-    width: 144px; 
-    height: 144px;
-    padding-right: 52px;
-    padding-left: 52px;
-    padding-bottom: 20px;
-
-}
-
-.block_face4 {
-    width: 288px;
-    height: 348px;
-    border-radius: 20px;
-    opacity: 0px;
-    background-color: #ffffff;
-}
-
-
-.block_face4 h4{   
-    width: 248px;
-    height: 24px;
-    text-align: center;
-}
-
-.block_face4 div img{   
-    display:flex;
-    justify-content: center; 
-    width: 144px; 
-    height: 144px;
-    padding-right: 52px;
-    padding-left: 52px;
-    padding-bottom: 20px;
-
-}
-
-
-.block_face5 {
-    width: 288px;
-    border-radius: 20px;
-    opacity: 0px;
-    background-color: #ffffff;
-    margin-top: 24px;
-}
-
-
-.block_face5 h4{   
-    width: 248px;
-    height: 24px;
-    text-align: center;
-}
-
-.block_face5 div img{   
-    display:flex;
-    justify-content: center; 
-    width: 144px; 
-    height: 144px;
-    padding-right: 52px;
-    padding-left: 52px;
-    padding-bottom: 20px;
-
-}
-
-.block_face6 {
-    width: 288px;
-    border-radius: 20px;
-    opacity: 0px;
-    background-color: #ffffff;
-    margin-top: 24px;
-}
-
-
-.block_face6 h4{   
-    width: 248px;
-    height: 24px;
-    text-align: center;
-}
-
-.block_face6 div img{   
-    display:flex;
-    justify-content: center; 
-    width: 144px; 
-    height: 144px;
-    padding-right: 52px;
-    padding-left: 52px;
-    padding-bottom: 20px;
-
-}
-
-.block_face7 {
-    width: 288px;
-    height: 296px;
-    border-radius: 20px;
-    background-color: #ffffff;
-    margin-top: 24px;
-}
-
-
-.block_face7 h4{   
-    width: 248px;
-    height: 24px;
-    text-align: center;
-}
-
-.block_face7 div img{   
-    display:flex;
-    justify-content: center; 
-    width: 144px; 
-    height: 144px;
-    padding-right: 52px;
-    padding-left: 52px;
-    padding-bottom: 20px;
-
-}
-
-
-.block_face8 {
-    width: 288px;
-    height: 296px;
-    border-radius: 20px;
-    opacity: 0px;
-    background-color: #ffffff;
-    margin-top: 24px;
-}
-
-
-.block_face8 h4{   
-    width: 248px;
-    height: 24px;
-    text-align: center;
-}
-
-.block_face8 div img{   
-    display:flex;
-    justify-content: center; 
-    width: 144px; 
-    height: 144px;
-    padding-right: 52px;
-    padding-left: 52px;
-    padding-bottom: 20px;
-
 }
 
 .body_small div {
