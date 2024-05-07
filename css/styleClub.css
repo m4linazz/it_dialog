@@ -105,3 +105,54 @@ html {
     align-items: center;
     justify-content: space-between;
 }
+.partners {
+    padding: 56px 0px 56px 0px;
+}
+.partners-blocks {
+    padding-top: 40px;
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+}
+.partner-block {
+    width: 184px;
+    height: 80px;
+    border: 1px #E1E6EB solid;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-community {
+    background-color:#1D2329;
+    padding: 56px 0 56px 0;
+}
+.bg-community div h2 {
+    color: white;
+    padding-bottom: 40px;
+}
+.community-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    gap:24px;
+}
+.community-block {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+
+}
+.Checkmark2-community {
+    padding-bottom: 16px;
+}
+.community-block div h3 {
+    color: white;
+    margin-bottom: 28px;
+}
+.more-community {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
