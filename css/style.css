@@ -82,6 +82,7 @@ h5 {
     background-color: #2B71C2;
     border-radius: 12px;
     border: none;
+    cursor: pointer;
 }
 
 .button_white {
@@ -89,7 +90,9 @@ h5 {
     background-color: #F5F8FC;
     border-radius: 12px;
     border: 1px solid #2B71C2;
+    cursor: pointer;
 }
+
 
 /*шапка*/
 .logo {
@@ -184,3 +187,57 @@ h5 {
 }
 
 /*лица клуба*/
+
+.main-face{
+    background-color:#F5F8FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 56px 0 56px 0;
+}
+
+.blocks_face {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.block_face {
+    width: 248px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    gap: 16px;
+  
+}
+
+.block_faces {
+    width: 288px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+
+.block_faces h4{   
+    width: 248px;
+    height: 24px;
+    text-align: center;
+}
+
+.block_faces div img{   
+    display:flex;
+    justify-content: center; 
+    width: 144px; 
+    height: 144px;
+    padding-right: 52px;
+    padding-left: 52px;
+    padding-bottom: 20px;
+}
+
+.body_small div {
+    color: #78838F;
+    text-align: center;
+}
