@@ -241,3 +241,8 @@ h5 {
     color: #78838F;
     text-align: center;
 }
+.btn_faces {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
