@@ -328,11 +328,77 @@ swiper-slide:nth-child(3n) {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+
   height: 308px;
   gap: 24px;
 }
 .block-form-club {
     padding-top: 56px;
+}
+
+/* Форма вступления в клуб */
+.join-club-bg {
+    background-color:#F5F8FC ;
+    padding-top: 56px;
+}
+.join-club {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.description-join-club {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.bg-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background-color: white;
+    border-radius: 28px;
+    padding: 40px;
+}
+.bg-form .body_small {
+    color: #1D2329;
+    padding-left: 16px;
+}
+.form-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.bg-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.block-form {
+    height: 56px;
+    border-radius: 12px;
+    background-color:#F7F9FA;
+    border: 1px solid #E1E6EB;
+
+}
+.body_small-join-club {
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+.btn-join-club {
+
+    padding-top: 28px;
+}
+input[placeholder], [placeholder], *[placeholder] {
+    color: #1D2329 !important;
+}
+::-webkit-input-placeholder { 
+    color:#000000;
+}
+input:focus {
+    border-color: #1D2329;
 }
 /* свяжитесь с нами */
 
