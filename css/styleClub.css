@@ -14,7 +14,7 @@ html {
     display: flex;
     justify-content: space-between; 
     padding: 16px;
-
+    flex-wrap: wrap;
 }
 
 .left-header { 
@@ -27,6 +27,7 @@ html {
     justify-content: space-between ;
     text-align: center;
     text-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 36px ;
 }
 .center-header a {
@@ -129,6 +130,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .bg-dark-club {
     background-color:#1D2329;
@@ -136,21 +138,21 @@ html {
 }
 .bg-dark-club div h2 {
     color: white;
-    padding-bottom: 40px;
 }
 
 /*Экспертное сообщество*/
 .community-blocks {
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap ;
+    flex-wrap:wrap;
     gap:24px;
 }
 .community-block {
     width: 600px;
     display: flex;
     flex-direction: column;
-
+    padding-top: 40px;
+    flex-wrap: wrap;
 }
 .Checkmark2-community {
     padding-bottom: 16px;
@@ -181,6 +183,7 @@ html {
 .invent_calendars {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .invent_calendar-block {
@@ -189,8 +192,8 @@ html {
     gap:28px;
     border: 1px solid #E1E6EB;
     border-radius: 20px;
-    padding: 20px;
-    width: 392px;
+    padding: 19px;
+    width: 352px;
 }
 
 .invent-balls {
@@ -309,6 +312,7 @@ swiper-slide:nth-child(3n) {
  .form-club {
    display: flex;
    flex-direction: column;
+   width: 600px;
    gap: 16px;
 }
 .form-club .body_large {
@@ -322,18 +326,77 @@ swiper-slide:nth-child(3n) {
 .form-club2 {
   background-color: #313B47;
   border-radius: 20px;
+  width: 560px;
   padding: 20px 20px 0px 20px;
+}
+.form-club2 .body_large {
+    width: 560px;
 }
 .description-form-club {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-
-  height: 308px;
+  flex-wrap: wrap;
   gap: 24px;
+  padding-top: 40px;
 }
 .block-form-club {
     padding-top: 56px;
+}
+
+/* Документы */
+.main-doc{
+    background-color:#F5F8FC;
+    padding: 56px 0 56px 0;
+}
+
+.doc_name {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blocks_doc {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 40px;
+}
+
+.block_doc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+  
+}
+
+.block_doc div h5 {
+    width: 392px;
+    height: 57px;
+    color:#1D2329 ;
+}
+
+.doc-load {
+    display: flex;
+    gap: 8px;
+}
+.doc-load .button_text_white {
+    padding: 0px 0px 0px 0px;
+    color: #78838F;
+    
+}
+
+.block_docs div img{   
+    width: 56px; 
+    height: 56px;
+}
+
+.doc-load div img {
+    width: 13.33px;
+    height: 16px;
+
 }
 
 /* Форма вступления в клуб */
@@ -344,12 +407,14 @@ swiper-slide:nth-child(3n) {
 .join-club {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 24px;
 }
 .description-join-club {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 600px;
 
 }
 .bg-form {
@@ -367,6 +432,8 @@ swiper-slide:nth-child(3n) {
 .form-blocks {
     display: flex;
     flex-direction: column;
+    width: 520px;
+
     gap: 16px;
 }
 .bg-form form {
