@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ИТ-Диалог Клуб</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/styleClub.css">
+    <link rel="stylesheet" href="../css/style_media.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +25,6 @@
                     <div class="left-header">
                         <a href="#" class="logo"><img src="../images/LogoClub.svg" alt="LogoClub"></a>
                     </div>
-                    
                     <div class="center-header">
                         <h5><a href="#vector">Направления</a></h5>
                         <h5><a href="#face_club">Участники</a></h5>
@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="itdialog">
-                    <div>
+                    <div class="description-block-header">
                         <h1>ИТ-Диалог</h1>
                         <div class="header-content-border">
                             <div class="body_large sc-text-itclub">площадка для прямых коммуникаций власти и ИТ-бизнеса
@@ -184,6 +184,7 @@
 
     <div class="partners">
        <div class="container">
+        <div class="partners-info">
           <h2>Партнеры ИТ-Диалог</h2>
 
           <div class="partners-blocks">
@@ -200,46 +201,50 @@
           </div>
        </div>
     </div>
-
+</div>
     <div class="bg-dark-club">
       <div class="container">
+        <div class="ekspert">
         <h2>Экспертное сообщество</h2>
         <div class="community-blocks">
-          <div class="community-block">
-            <div class="Checkmark2-community"><img src="../images/Checkmark2.png" alt="Checkmark"></div>
-              <div><h3>Руководители органов власти</h3></div>
-              <div class="more-community">
-                <h5>Узнать подробнее</h5> 
-                <img src="../images/rowcommunity.svg" alt="rowcommunity">
-              </div>
-          </div>
+          <div  class="community-block-row">
+            <div class="community-block">
+              <div class="Checkmark2-community"><img src="../images/Checkmark2.png" alt="Checkmark"></div>
+                <div><h3>Руководители органов власти</h3></div>
+                <div class="more-community">
+                  <h5>Узнать подробнее</h5> 
+                  <img src="../images/rowcommunity.svg" alt="rowcommunity">
+                </div>
+            </div>
           
-          <div class="community-block">
-            <div class="Checkmark2-community"><img src="../images/Checkmark2.png" alt="Checkmark"></div>
-              <div><h3>Руководители ИКТ-бизнеса</h3></div>
-              <div class="more-community">
-                <h5>Узнать подробнее</h5> 
-                <img src="../images/rowcommunity.svg" alt="rowcommunity">
-              </div>
+            <div class="community-block">
+              <div class="Checkmark2-community"><img src="../images/Checkmark2.png" alt="Checkmark"></div>
+                <div><h3>Руководители ИКТ-бизнеса</h3></div>
+                <div class="more-community">
+                  <h5>Узнать подробнее</h5> 
+                  <img src="../images/rowcommunity.svg" alt="rowcommunity">
+                </div>
           </div>
-          <div class="community-block">
-            <div class="Checkmark2-community"><img src="../images/Checkmark2.png" alt="Checkmark"></div>
-              <div><h3>ИТ директора предприятий</h3></div>
-              <div class="more-community">
-                <h5>Узнать подробнее</h5> 
-                <img src="../images/rowcommunity.svg" alt="rowcommunity">
-              </div>
+        </div>
+        <div  class="community-block-row">
+            <div class="community-block">
+              <div class="Checkmark2-community"><img src="../images/Checkmark2.png" alt="Checkmark"></div>
+                <div><h3>ИТ директора предприятий</h3></div>
+                <div class="more-community">
+                  <h5>Узнать подробнее</h5> 
+                  <img src="../images/rowcommunity.svg" alt="rowcommunity">
+                </div>
+            </div>
+            <div class="community-block">
+              <div class="Checkmark2-community"><img src="../images/Checkmark2.png" alt="Checkmark"></div>
+                <div><h3>Ректоры профильных вузов</h3></div>
+                <div class="more-community">
+                  <h5>Узнать подробнее</h5> 
+                  <img src="../images/rowcommunity.svg" alt="rowcommunity">
+                </div>
           </div>
-          <div class="community-block">
-            <div class="Checkmark2-community"><img src="../images/Checkmark2.png" alt="Checkmark"></div>
-              <div><h3>Ректоры профильных вузов</h3></div>
-              <div class="more-community">
-                <h5>Узнать подробнее</h5> 
-                <img src="../images/rowcommunity.svg" alt="rowcommunity">
-              </div>
-          </div>
-
-
+        </div>
+      </div>
         </div>
       </div>
     </div>
@@ -288,6 +293,7 @@
 
     <div class="projects" id="projects">
       <div class="container">
+        <div class="project-eks">
         <div><h2>Проекты Экспертного клуба</h2></div>
         <div class="project-blocks">
 
@@ -327,14 +333,14 @@
               </button>
             </div>
           </div>
-
+        </div>
         </div>
       </div>
     </div>
 
     <div class="bg-dark-club">
       <div class="container">
-        <h2>Фотогалерея</h2>
+        <div><h2>Фотогалерея</h2></div>
 
         <swiper-container class="mySwiper" space-between="24" slides-per-view="auto"  navigation="true">
           <swiper-slide><img class="slider-image" src="../images/photogallery1.jpeg" alt="photogallery1"></swiper-slide>
@@ -342,11 +348,10 @@
           <swiper-slide><img class="slider-image" src="../images/photogallery3.jpeg" alt="photogallery3"></swiper-slide>
         </swiper-container>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    
         <div class="block-form-club">
         <h2>Организационно-юридическая форма клуба</h2>
         <div class="description-form-club">
-          
+
           <div class="form-club">
             <div class="body_large">
               Участниками Клуба со стороны ИКТ-бизнеса являются компании, входящие в состав Ассоциации предприятий связи,
@@ -358,7 +363,6 @@
               Задачи Ассоциации – поддержка и продвижение членов объединения, популяризация цифровых решений, повышение цифровой грамотности населения и сотрудников органов власти.
             </div>
           </div>
-
           <div class="form-club2">
             <div class="body_large">
               В основу создаваемого Клуба «ИТ Диалог» заложена принципиально иная концепция института развития и поддержки.
@@ -366,13 +370,129 @@
               Представители ИТ-бизнеса формируют запрос на актуальные для него меры поддержки и продвигают в своей среде именно востребованные ИТ-отраслью меры.
             </div>
           </div>
+
         </div>
       </div>
       </div>
     </div>
     <!-- Документы -->
-
+    <div class="main-doc">
+      <div class="container">
+        <div class="doc_name">
+          <div><h2>Документы</h2></div>
+          <div class="blocks_doc">
+    
+            <div class="block_docs">
+              <div class="block_doc">
+                <div><img src="../images/PDF.png" alt=""></div>
+                  <div><h5>Положение о членстве в «Ассоциации предприятий связи, информационных технологий и цифрового развития»</h5></div>
+                  <div class="doc-load">
+                  <div class="button_text_white">Загрузить</div>
+                  <div><img src="../images/strelka.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="block_docs">
+              <div class="block_doc">
+                <div><img src="../images/PDF.png" alt=""></div>
+                  <div><h5>Заявление о вступлении</h5></div>
+                  <div class="doc-load">
+                  <div class="button_text_white">Загрузить</div>
+                  <div><img src="../images/strelka.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="block_docs">
+              <div class="block_doc">
+                <div><img src="../images/PDF.png" alt=""></div>
+                  <div><h5>Договор о членстве в «Ассоциации предприятий связи, информационных технологий и цифрового развития»</h5></div>
+                  <div class="doc-load">
+                  <div class="button_text_white">Загрузить</div>
+                  <div><img src="../images/strelka.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+    
+    
+    
+            <div class="block_docs">
+              <div class="block_doc">
+                <div><img src="../images/PDF.png" alt=""></div>
+                  <div><h5>Запрос из реестра членов «Ассоциации предприятий связи, информационных технологий и цифрового развития»</h5></div>
+                  <div class="doc-load">
+                  <div class="button_text_white">Загрузить</div>
+                  <div><img src="../images/strelka.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="block_docs">
+              <div class="block_doc">
+                <div><img src="../images/PDF.png" alt=""></div>
+                  <div><h5>Выписка из реестра членов «Ассоциации предприятий связи, информационных технологий и цифрового развития»</h5></div>
+                  <div class="doc-load">
+                  <div class="button_text_white">Загрузить</div>
+                  <div><img src="../images/strelka.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="block_docs">
+              <div class="block_doc">
+                <div><img src="../images/PDF.png" alt=""></div>
+                  <div><h5>Свидетельство о членстве в Ассоциации предприятий связи, информационных технологий и цифрового развития</h5></div>
+                  <div class="doc-load">
+                  <div class="button_text_white">Загрузить</div>
+                  <div><img src="../images/strelka.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+    
+    </div>
+        </div>
+      </div>
+      </div>
+    
     <!-- Вступите в Клуб и получите преимущества уже сегодня -->
+    <div class="join-club-bg">
+      <div class="container">
+        <div class="join-club">
+          <div class="description-join-club">
+
+              <h2>Вступите в Клуб <br>
+                и получите преимущества уже сегодня</h2>
+
+        <div><img src="../images/puzzle.png" alt="puzzle"></div>
+        
+          </div>
+          
+          <div class="bg-form">
+            <div class="form-blocks">
+              <form>
+                <input class="block-form body_small" type="text" id="name" name="name" placeholder="Ваше имя">
+                <input class="block-form body_small" type="text" id="phone" placeholder="Телефон">
+                <input class="block-form body_small" type="text" id="organization" placeholder="Организация, которую вы представляете">
+                <input class="block-form body_small" type="email" id="email" placeholder="E-mail">
+              </form>
+
+              <div class="privacy body_small-join-club">Нажимая на кнопку вы соглашаетесь с политикой обработки
+                персональных данных
+              </div>
+              <button class="button_blue button_text_blue "> Подать заявку</button>
+            </div>
+            </div>
+           
+           
+          
+        </div>
+      </div>
+    </div>
 
     <div class="connection_page">
       <div class="container">

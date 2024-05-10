@@ -4,6 +4,7 @@
     
 }
 
+
 .container {
     width: 1224px;
     max-width: 100%;
@@ -23,21 +24,22 @@ h2 {
     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
-    color: #1D2329
+    color: #1D2329;
+    
 }
 
 h3 {
     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 600;
     font-size: 1.75rem;
-    color: #1D2329
+    color: #1D2329;
 }
 
 h4 {
     font-family: "Wix Madefor Display", sans-serif;
     font-weight: 600;
     font-size: 1.25rem;
-    color: #1D2329
+    color: #1D2329;
 }
 
 h5 {
@@ -128,7 +130,6 @@ h5 {
 }
 
 .header-content {
-    padding: 80px 108px 80px 108px;
     height: 590px;
     display: flex;
     flex-direction: column;
@@ -151,6 +152,11 @@ h5 {
 
 /*что такое ИТ Диалог*/
 
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 .what_is_it_dialog {
     padding:56px 0 56px 0;
 }
@@ -158,8 +164,8 @@ h5 {
 .blocks_it {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    gap: 22px;
     margin-top: 40px;
 }
 
@@ -203,7 +209,7 @@ h5 {
 .blocks_face {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 24px;
     margin-top: 40px;
 }
@@ -268,17 +274,19 @@ h5 {
 
 .invent_calendars {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
 }
 
 .invent_calendar-block {
     display: flex;
     flex-direction: column;
-    gap:28px;
     border: 1px solid #E1E6EB;
     border-radius: 20px;
-    padding: 20px;
-    width: 392px;
+    gap:28px;
+    padding: 19px;
+    width: 352px;
 }
 
 .invent-balls {
@@ -331,7 +339,8 @@ h5 {
 .publications{
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: center;
+   gap: 22px;
 }
 
 .publication-description {
@@ -362,11 +371,43 @@ h5 {
     justify-content: center;
 }
 
+/* партнеры */
+
+.partners {
+    padding: 56px 0px 56px 0px;
+}
+.partners-blocks {
+    padding-top: 40px;
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.partner-block {
+    width: 184px;
+    height: 80px;
+    border: 1px #E1E6EB solid;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.bg-dark-club {
+    background-color:#1D2329;
+    padding: 56px 0 56px 0;
+}
+.bg-dark-club div h2 {
+    color: white;
+}
+
 /* свяжитесь с нами */
 
 .connection-info {
     display: flex;
-    gap:24px;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
 }
 
 .connection_page {
@@ -391,7 +432,7 @@ h5 {
 .connection {
     display: flex;
     flex-direction: column;
-    Width: 600px;
+    width: 560px;
     border-radius: 20px;
     padding: 20px;
     gap: 28px;
@@ -440,6 +481,7 @@ h5 {
 
 .footer-phone h4{
    color: #ffffff;
+   text-align: right;
 }
 
 .right-footer-links {
