@@ -281,6 +281,7 @@
     .header-content {
         transform: scale(0.92);
     }
+    
 
     h1 {
         font-size: 2.2rem;
@@ -312,15 +313,21 @@
         margin-left: -76px;
     }
     .center-header h5 {
-        font-size: 0.55rem;
+        font-size: 0.566rem;
     }
     .center-header {
-        gap:5px;
+        margin-right: 13px;
+        gap:5.3px;
        }
 
        .left-header {
-        transform: scale(0.5);
-        margin-left: -44px;
+        transform: scale(0.48);
+        margin-left: -48px;
+        margin-top: 3px;
+    }
+
+    .form-club2 {
+        margin-top: 150px;
     }
 
 
