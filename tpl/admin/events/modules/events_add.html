@@ -1,0 +1,38 @@
+<div id="event_add" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+        <h2 class="uk-modal-title">Добавление мероприятия</h2>
+        <p>Здесь можно добавить новое мероприятие. Учитывайте, что после добавления мероприятия оно сразу отобразиться в соответствующем блоке на основном сайте!</p>
+        <form action="/admin_events" enctype="multipart/form-data" method="POST">
+            <fieldset class="uk-fieldset">
+        
+                <legend class="uk-legend">Название мероприятия</legend>
+                <div class="uk-margin">
+                    <input name="event_add_title" class="uk-input" type="text" placeholder="Например: Конференция" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Дата проведения</legend>
+                <div class="uk-margin">
+                    <input name="event_add_date" class="uk-input" type="text" placeholder="Например: <?php echo date('d F Y', time()) ?>" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Фотография</legend>
+                <div class="uk-child-width-1-2 uk-text-left" uk-grid>
+                    <div>
+                        <div uk-form-custom="target: true">
+                            <input class="uk-input uk-width-expand" type="file" name="event_add_photo" accept="image/jpeg,image/png" aria-label="Custom controls">
+                            <input class="uk-input uk-width-expand" type="text" placeholder="Выберите файл" aria-label="Custom controls" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="uk-text-right">Размер загружаемой фотографии не должен превышать 10 МБайт</p>
+                    </div>
+                </div>
+        
+            </fieldset>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
+                <button type="submit" name="event_add" class="uk-button uk-button-primary">Добавить</button>
+            </p>
+        </form>
+    </div>
+</div>

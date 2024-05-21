@@ -1,0 +1,38 @@
+<div id="club_add" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+        <h2 class="uk-modal-title">Добавление члена клуба</h2>
+        <p>Здесь можно добавить нового члена клуба, который будет отображаться в списке на основном сайте. Учитывайте, что после добавления информация сразу передаётся на основной сайт!</p>
+        <form action="/admin_club" enctype="multipart/form-data" method="POST">
+            <fieldset class="uk-fieldset">
+        
+                <legend class="uk-legend">ФИО</legend>
+                <div class="uk-margin">
+                    <input name="club_add_name" class="uk-input" type="text" placeholder="Например: Иван Иванов" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Должность</legend>
+                <div class="uk-margin">
+                    <input name="club_add_position" class="uk-input" type="text" placeholder="Например: Губернатор" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Фотография</legend>
+                <div class="uk-child-width-1-2 uk-text-left" uk-grid>
+                    <div>
+                        <div uk-form-custom="target: true">
+                            <input class="uk-input uk-width-expand" type="file" name="club_add_photo" accept="image/jpeg,image/png" aria-label="Custom controls">
+                            <input class="uk-input uk-width-expand" type="text" placeholder="Выберите файл" aria-label="Custom controls" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="uk-text-right">Размер загружаемой фотографии не должен превышать 10 МБайт</p>
+                    </div>
+                </div>
+        
+            </fieldset>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
+                <button type="submit" name="club_add" class="uk-button uk-button-primary">Добавить</button>
+            </p>
+        </form>
+    </div>
+</div>

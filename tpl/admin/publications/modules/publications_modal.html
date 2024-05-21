@@ -1,0 +1,64 @@
+<div id="edit_<?php echo $publications_id ?>" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+        <h2 class="uk-modal-title">Редактирование публикации</h2>
+        <p>Здесь можно отредактировать выбранную публикацию. Учитывайте, что после редактирования публикации она сразу изменится в соответствующем блоке на основном сайте!</p>
+        <form action="/admin_publications" enctype="multipart/form-data" method="POST">
+            <fieldset class="uk-fieldset">
+
+                <div class="uk-margin" hidden>
+                    <input name="publication_edit_id" value="<?php echo $publications_id; ?>">
+                    <input name="publication_edit_photo_old" value="<?php echo $publications_photo; ?>">
+                </div>
+        
+                <legend class="uk-legend">Название</legend>
+                <div class="uk-margin">
+                    <input name="publication_edit_title" class="uk-input" type="text" placeholder="Например: Итоги года" value="<?php echo $publications_title; ?>" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Текст</legend>
+                <div class="uk-margin">
+                    <textarea name="publication_edit_text" class="uk-textarea" rows="5" placeholder="Textarea" aria-label="Textarea"><?php echo $publications_text; ?></textarea>
+                </div>
+
+                <legend class="uk-legend">Фотография</legend>
+                <div class="uk-child-width-1-2 uk-text-left" uk-grid>
+                    <div>
+                        <div uk-form-custom="target: true">
+                            <input class="uk-input uk-width-expand" type="file" name="publication_edit_photo" accept="image/jpeg,image/png" aria-label="Custom controls">
+                            <input class="uk-input uk-width-expand" type="text" placeholder="Выберите файл" aria-label="Custom controls" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="uk-text-right">Размер загружаемой фотографии не должен превышать 10 МБайт</p>
+                    </div>
+                </div>
+        
+            </fieldset>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
+                <button type="submit" name="publication_edit" class="uk-button uk-button-primary">Отредактировать</button>
+            </p>
+        </form>
+    </div>
+</div>
+
+<div id="delete_<?php echo $publications_id ?>" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+        <h2 class="uk-modal-title">Удаление публикации</h2>
+        <p>Уверены, что хотите удалить выбранную публикацию? После подтверждения действия, публикация также пропадёт из списка на основном сайте!</p>
+        <form action="/admin_publications" enctype="multipart/form-data" method="POST">
+            <fieldset class="uk-fieldset">
+
+                <div class="uk-margin" hidden>
+                    <input name="publication_delete_id" value="<?php echo $publications_id; ?>">
+                    <input name="publication_delete_photo" value="<?php echo $publications_photo; ?>">
+                </div>
+        
+            </fieldset>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
+                <button type="submit" name="publication_delete" class="uk-button uk-button-primary">Удалить</button>
+            </p>
+        </form>
+    </div>
+</div>

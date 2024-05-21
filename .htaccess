@@ -1,0 +1,20 @@
+RewriteEngine On
+
+ErrorDocument 403 /403.php
+ErrorDocument 404 /404.php
+
+AddDefaultCharset utf-8
+
+SetEnv TZ Europe/Moscow
+
+RewriteBase /
+RewriteRule ^test/page/([0-9]+)/?$ test.php?page=$1 [NC,QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+php_value session.gc_maxlifetime 86400
+php_value session.cookie_lifetime 86400

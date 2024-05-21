@@ -1,0 +1,64 @@
+<div id="edit_<?php echo $partners_id ?>" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+        <h2 class="uk-modal-title">Редактирование организации-партнёра</h2>
+        <p>Здесь можно отредактировать выбранную организацию-партнёра. Учитывайте, что после редактирования организации-партнёра она сразу изменится в соответствующем блоке на основном сайте!</p>
+        <form action="/admin_partners" enctype="multipart/form-data" method="POST">
+            <fieldset class="uk-fieldset">
+
+                <div class="uk-margin" hidden>
+                    <input name="partner_edit_id" value="<?php echo $partners_id; ?>">
+                    <input name="partner_edit_photo_old" value="<?php echo $partners_photo; ?>">
+                </div>
+        
+                <legend class="uk-legend">Название</legend>
+                <div class="uk-margin">
+                    <input name="partner_edit_title" class="uk-input" type="text" placeholder="Например: ООО Компания" value="<?php echo $partners_title; ?>" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Сcылка на сайт</legend>
+                <div class="uk-margin">
+                    <input name="partner_edit_link" class="uk-input" type="text" placeholder="Например: https://site.com/" value="<?php echo $partners_link; ?>" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Фотография</legend>
+                <div class="uk-child-width-1-2 uk-text-left" uk-grid>
+                    <div>
+                        <div uk-form-custom="target: true">
+                            <input class="uk-input uk-width-expand" type="file" name="partner_edit_photo" accept="image/jpeg,image/png" aria-label="Custom controls">
+                            <input class="uk-input uk-width-expand" type="text" placeholder="Выберите файл" aria-label="Custom controls" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="uk-text-right">Размер загружаемой фотографии не должен превышать 10 МБайт</p>
+                    </div>
+                </div>
+        
+            </fieldset>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
+                <button type="submit" name="partner_edit" class="uk-button uk-button-primary">Отредактировать</button>
+            </p>
+        </form>
+    </div>
+</div>
+
+<div id="delete_<?php echo $partners_id ?>" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+        <h2 class="uk-modal-title">Удаление организации-партнёра</h2>
+        <p>Уверены, что хотите удалить выбранную организации-партнёра? После подтверждения действия, организация-партнёр также пропадёт из списка на основном сайте!</p>
+        <form action="/admin_partners" enctype="multipart/form-data" method="POST">
+            <fieldset class="uk-fieldset">
+
+                <div class="uk-margin" hidden>
+                    <input name="partner_delete_id" value="<?php echo $partners_id; ?>">
+                    <input name="partner_delete_photo" value="<?php echo $partners_photo; ?>">
+                </div>
+        
+            </fieldset>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
+                <button type="submit" name="partner_delete" class="uk-button uk-button-primary">Удалить</button>
+            </p>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div id="partner_add" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+        <h2 class="uk-modal-title">Добавление организации-партнёра</h2>
+        <p>Здесь можно добавить новую организацию-партнёра. Учитывайте, что после добавления организации-партнёра она сразу отобразиться в соответствующем блоке на основном сайте!</p>
+        <form action="/admin_partners" enctype="multipart/form-data" method="POST">
+            <fieldset class="uk-fieldset">
+        
+                <legend class="uk-legend">Название</legend>
+                <div class="uk-margin">
+                    <input name="partner_add_title" class="uk-input" type="text" placeholder="Например: ООО Компания" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Сcылка на сайт</legend>
+                <div class="uk-margin">
+                    <input name="partner_add_link" class="uk-input" type="text" placeholder="Например: https://site.com/" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Фотография</legend>
+                <div class="uk-child-width-1-2 uk-text-left" uk-grid>
+                    <div>
+                        <div uk-form-custom="target: true">
+                            <input class="uk-input uk-width-expand" type="file" name="partner_add_photo" accept="image/jpeg,image/png" aria-label="Custom controls">
+                            <input class="uk-input uk-width-expand" type="text" placeholder="Выберите файл" aria-label="Custom controls" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="uk-text-right">Размер загружаемой фотографии не должен превышать 10 МБайт</p>
+                    </div>
+                </div>
+        
+            </fieldset>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
+                <button type="submit" name="partner_add" class="uk-button uk-button-primary">Добавить</button>
+            </p>
+        </form>
+    </div>
+</div>

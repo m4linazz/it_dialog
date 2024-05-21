@@ -1,0 +1,334 @@
+@media screen and (max-width: 1224px) {
+  .container {
+    width: 95%;
+  }
+
+  .down_header {
+    width: 90%;
+}
+
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .description-join-club h2 {
+    text-align: center;
+  }
+
+  .description-join-club div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1162px) {
+    .description-join-club div img {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) { 
+    h2 {
+        text-align: center;
+    }
+    .description {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 847px) {
+    .btn-club {
+        margin-top: 55px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .description {
+        width: 600px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+   h1 {
+    font-size: 3rem;
+   }
+   h2 {
+    font-size: 2.3rem;
+   }
+   .left-header {
+    transform: scale(0.9);
+    margin-left: -12px;
+   }
+   .center-header {
+    gap:18px;
+   }
+    .header-content-border {
+    width: 400px;
+   }
+    .block-form-club {
+    transform: scale(0.98);
+   }
+    .center-header h5 {
+        font-size: 0.9rem;
+   }
+   .community-block {
+    width: 500px;
+   }
+   
+}
+
+@media screen and (max-width: 600px) {
+    .center-header h5 {
+        font-size: 0.8rem;
+    }
+    .left-header {
+        transform: scale(0.8);
+        margin-left: -19px;
+       }
+       .center-header {
+        gap:10px;
+    }
+
+    .description {
+        transform: scale(0.8);
+        margin-left: -59px;
+    }
+    .form-club2 {
+        margin-top: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .description-block {
+       transform: scale(0.95);
+       margin-left: -18px;
+    }
+    .left-header {
+        transform: scale(0.6);
+        margin-left: -39px;
+    }
+    .center-header h5 {
+        font-size: 0.62rem;
+    }
+    .center-header {
+        gap:8.1px;
+       }
+    .join-club {
+        transform: scale(0.92);
+    }
+    .bg-form {
+        transform: scale(0.85)
+    }
+    
+    .community-block {
+        width: 400px;
+    }
+    .description {
+        transform: scale(0.76);
+        width: 500px;
+    }
+    
+    .community-blocks {
+        margin-top: -30px;
+    }
+
+    .itdialog {
+        margin-top: 30px;
+    }
+
+    .description {
+        margin-top: 20px;
+    }
+
+    .btn-club {
+        margin-top: 20px;
+    }
+
+    .header-content-border {
+        transform: scale(0.8);
+        margin-left: -38px;
+    }
+    .right-header {
+        transform: scale(0.8);
+        margin-left: -18px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+       }
+    .footer-phone h4 {
+        font-size: 1rem;
+    }
+    .right-footer-text div {
+        font-size: 0.8rem;
+    }
+
+    .left-footer-text div {
+        font-size: 0.8rem;
+    }
+
+    .what_is_it_dialog {
+        transform: scale(0.91);
+        margin-top: -40px;
+        margin-bottom: -50px;
+    }
+
+    .vector {
+        transform: scale(0.91);
+        margin-top: -50px;
+        margin-bottom: -60px;
+    }
+
+
+    .face_club {
+        transform: scale(0.91);
+        margin-bottom: -135px;
+        margin-top: -140px;
+    }
+
+    .invent_calendar {
+        transform: scale(0.91);
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+
+    .publications-info {
+        transform: scale(0.91);
+        margin-top: -60px;
+        margin-bottom: -80px;
+    }
+
+    .partners-info {
+        transform: scale(0.91);
+        margin-top: -70px;
+        margin-bottom: -40px;
+    }
+
+    .project-eks {
+        transform: scale(0.9);
+        margin-top: -70px;
+        margin-bottom: -40px;
+    }
+
+    .ekspert {
+        transform: scale(0.91);
+        margin-top: -60px;
+        margin-bottom: -40px;
+    }
+    
+    .connections {
+        transform: scale(0.91);
+        margin-top: -60px;
+        margin-bottom: -60px;
+    }
+
+    .header {
+        height: 590px;
+    }
+
+    .header-content {
+        height: 460px;
+    } 
+
+    .down_header {
+        margin-top: 30px;
+    }
+
+    .logo {
+        transform: scale(0.9);
+    }
+
+    .form-club2 {
+        margin-top: 120px;
+    }
+
+    .header-content-club {
+        height: 590px;
+    }
+    .btn-club {
+        transform: scale(0.8);
+        margin-left: -43px;
+        margin-top: 5px;
+    }
+    .description-form-club {
+        margin-top: -40px;
+    }
+    .block-form-club h2{
+        margin-top: -20px;
+    }
+
+    .doc_name {
+        transform: scale(0.9);
+        margin-top: -70px;
+        margin-bottom: -140px;
+    }
+    .join-club {
+        transform: scale(0.9);
+        margin-bottom: -80px;
+    }
+    .block_doc div h5 {
+        width: 350px;
+    
+}
+}
+
+@media screen and (max-width: 400px) {
+    .header-content {
+        transform: scale(0.92);
+    }
+    
+
+    h1 {
+        font-size: 2.2rem;
+       }
+
+    .header {
+        height: 550px;
+    }
+
+    .header-content {
+        margin-top: -40px;
+        height: 420px;
+    } 
+
+    .header-content-border {
+        transform: scale(0.7);
+        margin-left: -60px;
+    }
+    .right-header {
+        transform: scale(0.7);
+        margin-left: -27px;
+    }
+    .btn-club {
+        transform: scale(0.7);
+        margin-left: -60px;
+    }
+    .description {
+        transform: scale(0.68);
+        margin-left: -76px;
+    }
+    .center-header h5 {
+        font-size: 0.566rem;
+    }
+    .center-header {
+        margin-right: 13px;
+        gap:5.3px;
+       }
+
+       .left-header {
+        transform: scale(0.48);
+        margin-left: -48px;
+        margin-top: 3px;
+    }
+
+    .form-club2 {
+        margin-top: 150px;
+    }
+
+
+}

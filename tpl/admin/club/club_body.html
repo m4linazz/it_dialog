@@ -1,0 +1,8 @@
+<tr>
+    <td><?php echo $club_user_name; ?></td>
+    <td><?php echo $club_user_position; ?></td>
+    <td>
+        <a style="color: black;" href="#edit_<?php echo $club_user_id; ?>" uk-tooltip="title: <?php echo 'Редактировать' ?>; pos: bottom" uk-toggle><span uk-icon="pencil"></span></a>
+        <a style="color: black;" href="#delete_<?php echo $club_user_id; ?>" uk-tooltip="title: <?php echo 'Удалить' ?>; pos: bottom" uk-toggle><span uk-icon="trash"></span></a>
+    </td>
+</tr>

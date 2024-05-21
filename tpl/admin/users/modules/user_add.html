@@ -1,0 +1,25 @@
+<div id="user_add" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+        <h2 class="uk-modal-title">Добавление пользователя</h2>
+        <p>Здесь можно добавить нового пользователя, который будет обладать доступом к админ порталу. Учитывайте, что после создания, логин нельзя будет изменить!</p>
+        <form action="/admin_users" enctype="multipart/form-data" method="POST">
+            <fieldset class="uk-fieldset">
+        
+                <legend class="uk-legend">Логин</legend>
+                <div class="uk-margin">
+                    <input name="user_add_login" class="uk-input" type="text" placeholder="Например: qwerty" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Пароль</legend>
+                <div class="uk-margin">
+                    <input name="user_add_password" class="uk-input" type="password" placeholder="Например: password" aria-label="Input">
+                </div>
+        
+            </fieldset>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
+                <button type="submit" name="user_add" class="uk-button uk-button-primary">Добавить</button>
+            </p>
+        </form>
+    </div>
+</div>

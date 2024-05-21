@@ -1,0 +1,593 @@
+
+html {
+    box-sizing: border-box;
+}
+/*Шапка сайта */
+.header-content-club {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/ItdialogClub.jpeg") no-repeat center ;
+    width: 100%;
+    height: 720px;
+
+}
+
+.header-club {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-header { 
+    justify-content: center;
+    padding-top: 24px ;
+}
+.center-header {
+    display: flex;
+    gap: 28px;
+    justify-content: space-between ;
+    text-align: center;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 36px ;
+}
+.center-header a {
+    text-decoration: none;
+    color: white;
+}
+.right-header {
+    padding: 16px 0px 0px 0px;
+}
+
+.bg-dark-club div h2 {
+    margin-bottom: 38px;
+}
+
+.header-content-border {
+    display: flex;
+    background-color: #D12A11;
+    border-radius: 8px;
+    margin-top: 16px;
+    width: 600px;
+}
+.sc-text-itclub {
+    padding: 2px 16px 2px 16px;
+}
+.itdialog {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+
+}
+.description{
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    width: 808px;
+    gap: 16px;
+}
+.description-block img {
+    width: 28px;
+    height: 28px;
+}
+.description-block {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+}
+.btn-club {
+    margin-top: 104px;
+}
+/*Направления деятельности клуба */
+.vector {
+    padding: 56px 0px 56px 0px;
+}
+.club-directions {
+    display: flex;
+    flex-wrap: wrap; 
+    gap:24px;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.item-dir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 392px;
+    height: 120px;
+    background-color:#2B71C2 ;
+    border-radius: 20px;
+}
+.circle-dir {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.28);
+    justify-content: center;
+    align-items: center;
+}
+.item-dir div h4 {
+    color: white;
+}
+.navigate {
+    display: flex;
+    width: 312px;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Партнеры ИТ-Диалог */
+.partners {
+    padding: 56px 0px 56px 0px;
+}
+.partners-blocks {
+    padding-top: 40px;
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+}
+.partner-block {
+    width: 184px;
+    height: 80px;
+    border: 1px #E1E6EB solid;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.partner-block img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.bg-dark-club {
+    background-color:#1D2329;
+    padding: 56px 0 56px 0;
+}
+.bg-dark-club div h2 {
+    color: white;
+}
+
+/*Экспертное сообщество*/
+.community-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:24px;
+}
+.community-block {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+.Checkmark2-community {
+    padding-bottom: 16px;
+}
+.community-block div h3 {
+    color: white;
+    margin-bottom: 28px;
+}
+.more-community {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+/*Календарь мероприятий */
+.btn_calendar {
+    display: flex;
+    justify-content: center;
+}
+
+.invent_calendar {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 56px 0 56px 0;
+}
+
+.invent_calendars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+}
+
+.invent_calendar-block {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E1E6EB;
+    border-radius: 20px;
+    gap:28px;
+    padding: 19px;
+    width: 352px;
+}
+
+.invent-balls {
+    display: flex;
+    gap:16px;
+}
+
+.invent-ball1 {
+    background-color: #F5F8FC;
+    width: 168px;
+    height: 168px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invent-ball1 img {
+    mix-blend-mode: darken;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.invent-ball2 {
+    background-color: #FAE9E6;
+    width: 168px;
+    height: 168px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.invent-ball2 div h4 {
+    color: #D12A11;
+}
+
+.invent_year {
+    color: #D12A11;
+}
+
+
+/* Проекты экспернтого клуба*/
+
+.projects div h2 {
+    padding-top: 56px;
+}
+.project-blocks {
+
+    padding: 40px 0px 56px 0px;
+}
+.project-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+.project-block {
+    display: flex;
+    flex-direction: column;
+    width: 392px ;
+    gap: 28px;
+}
+.project-descrption {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.project-block-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button-projects {
+    display: flex;
+    align-items: end;
+}
+/* Фотогалерея */
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+  swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 23px;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.MySwiper {
+    width: 912px;
+    height: 513px;
+}
+swiper-slide {
+   width: 80%;
+}
+
+swiper-slide:nth-child(2n) {
+  width: 80%;
+}
+
+swiper-slide:nth-child(3n) {
+  width: 80%;
+}
+.slider-image {
+  border-radius: 20px;
+}
+
+.slaider div h2 {
+    margin-bottom: 38px;
+}
+
+/*Организационно-юридическая форма клуба*/
+.form-club {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 16px;
+ }
+ .form-club .body_large {
+   line-height: 25.6px;
+ }
+ .form-club .body_small {
+   height: 208px;
+   line-height: 28px;
+
+ }
+ .form-club2 {
+   background-color: #313B47;
+   border-radius: 20px;
+   width: 560px;
+   padding: 20px 20px 20px 20px;
+ }
+ 
+ .description-form-club {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 24px;
+   padding-top: 40px;
+ }
+ .block-form-club {
+     padding-top: 56px;
+ }
+/* Документы */
+.main-doc{
+    background-color:#F5F8FC;
+    padding: 56px 0 56px 0;
+}
+
+.doc_name {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blocks_doc {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+.block_doc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.block_doc div h5 {
+    width: 392px;
+    height: 57px;
+    color:#1D2329 ;
+}
+
+.doc-load {
+    display: flex;
+    gap: 8px;
+}
+.doc-load .button_text_white {
+    padding: 0px 0px 0px 0px;
+    color: #78838F;
+    
+}
+
+.block_docs div img{   
+    width: 56px; 
+    height: 56px;
+}
+
+.doc-load div img {
+    width: 13.33px;
+    height: 16px;
+
+}
+
+/* Форма вступления в клуб */
+.join-club-bg {
+    background-color:#F5F8FC ;
+    padding-top: 56px;
+}
+.join-club {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+.description-join-club {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+
+}
+
+.bg-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background-color: white;
+    border-radius: 28px;
+    padding: 40px;
+}
+.bg-form .body_small {
+    color: #1D2329;
+    padding-left: 16px;
+}
+.form-blocks {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+    gap: 16px;
+}
+.bg-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.block-form {
+    height: 56px;
+    border-radius: 12px;
+    background-color:#F7F9FA;
+    border: 1px solid #E1E6EB;
+
+}
+.body_small-join-club {
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+.btn-join-club {
+
+    padding-top: 28px;
+}
+input[placeholder], [placeholder], *[placeholder] {
+    color: #1D2329 !important;
+}
+::-webkit-input-placeholder { 
+    color:#000000;
+}
+input:focus {
+    border-color: #1D2329;
+}
+/* свяжитесь с нами */
+
+.connection-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+}
+
+.connection_page {
+    padding: 56px 0 56px 0;
+    background-color: #F5F8FC;
+}
+
+.connections {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.human_links div {
+    color:#1D2329;
+}
+
+.connect_human_name div {
+    color:#78838F;
+}
+
+.connection {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 28px;
+    background-color:#ffffff;
+}
+
+.connect_human {
+    display: flex;
+    gap: 28px;
+}
+
+.human_links {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.tg {
+    display: flex;
+    gap:8px;
+}
+
+/* футер */
+
+.footer {
+    background-color: #1D2329;
+    padding: 58px 0 58px 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.left-footer-text {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.footer-phone h4{
+   color: #ffffff;
+   text-align: right;
+}
+
+.right-footer-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+
+}
+
+.right-footer {
+    display: flex;
+    flex-direction: column;
+    gap:28px;
+}
+
+.right-footer-info {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.right-footer-text {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    text-align: right;
+}

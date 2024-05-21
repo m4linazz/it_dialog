@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/dist/user/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/dist/user/css/style_media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+
+    <title>ИТ-Диалог</title>
+    <link rel="icon" type="/dist/user/images/logo.svg" href="/dist/user/images/logo.svg">
+</head>
+<body>
+    
+<div class="header">
+  <div class="header-content">
+    <div class="logo"><img src="/dist/user/images/logo.svg" alt="logo"></div>
+    <div class="title_content"> <div class="title-header"><h1>Закрытое заседание<br>Экспертного клуба «ИТ-Диалог»<br>в СПбГЭТУ «ЛЭТИ»</h1></div>
+    <div class="data_adress">
+        <div class="data"><h5>19 апреля 2024 года, Санкт-Петербург</h5></div>
+        <div class="adress body_small">ул. Профессора Попова, д.5</div>
+    </div></div>
+    <div class="center"> <div class="down_header"> 
+      <div><img src="/dist/user/images/row1.svg" alt="row1"></div>
+      <button class="button_blue button_text_blue">Подробнее</button>
+      <div><img src="/dist/user/images/row2.svg" alt="row2"></div>
+    </div>
+  </div>
+</div></div>
+
+<div class="main">
+  <div class="container center">
+    <div class="what_is_it_dialog">
+      <div><h2>Что такое ИТ Диалог</h2></div>
+      <div class="blocks_it">
+      <div class="block_it1">
+        <div class="block_it">
+            <div><h3>Мероприятия</h3></div>
+            <div><button class="button_white button_text_white">Узнать больше</button></div>
+        </div>
+      </div>
+
+      <div class="block_it2">
+        <div class="block_it">
+            <div><h3>Экспертный клуб</h3></div>
+            <div><button class="button_white button_text_white" onclick="window.location.href='../club'">Узнать больше</button></div>
+        </div>
+      </div>
+
+      <div class="block_it3">
+        <div class="block_it">
+            <div><h3>Медиапроект</h3></div>
+            <div><button class="button_white button_text_white">Узнать больше</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="main-face">
+  <div class="container">
+    <div class="face_club">
+        <div><h2>Лица клуба</h2></div>
+        <div class="blocks_face">
+        <?php foreach($club_users_list as $formatted_value) {
+            $club_user_name = $formatted_value["name"];
+            $club_user_position = $formatted_value["position"];
+            $club_user_photo = $formatted_value["photo"];
+        ?>
+        <div class="block_faces">
+            <div class="block_face">
+            <img src="<?php echo $club_user_photo; ?>" alt="">
+                <div><h4><?php echo $club_user_name; ?></h4></div>
+                <div class = body_small><div><?php echo $club_user_position; ?></div></div>
+            </div>
+        </div>
+      <?php } ?>
+    </div>
+    <div class="btn_faces"><button class="button_blue button_text_blue">Показать всех</button></div> 
+  </div>
+</div>
+</div>
+
+<div class="calendar_page">
+  <div class="container">
+  <div class="invent_calendar">
+    <div><h2>Календарь мероприятий</h2></div>
+     <div class="invent_calendars">
+        <?php foreach($events_list as $formatted_value) {
+            $event_title = $formatted_value["title"];
+            $event_date = $formatted_value["date"];
+            $event_photo = $formatted_value["photo"];
+        ?>
+        <div class="invent_calendar-block">
+            <div class="invent-balls">
+            <div class="invent-ball1"><img src="<?php echo $event_photo; ?>" alt="invent1"></div>
+            <div class="invent-ball2">
+                <div><h4><?php echo substr($event_date,0,-5); ?></h4></div>
+                <div class="body_small invent_year"><?php echo substr($event_date,-4); ?></div></div>
+            </div>
+
+            <div class="invent-text"><h4><?php echo $event_title; ?></h4></div>
+        </div>
+        <?php } ?>
+        </div>
+        </div>
+     <div class="btn_calendar"><button class="button_blue button_text_blue">Показать все</button></div> 
+    </div>
+     </div>
+
+
+  <div class="publications_page">
+    <div class="container">
+    <div class="publications-info">
+      <div><h2>Публикации</h2></div>
+      <div class="publications">
+      <?php foreach($publications_list as $formatted_value) {
+        $publication_title = $formatted_value["title"];
+        $publication_text = $formatted_value["text"];
+        $publication_photo = $formatted_value["photo"];
+      ?>
+      <div class="publication">
+        <div class="publication-photo"><img src="<?php echo $publication_photo; ?>" alt="public1"></div>
+        <div class="publication-description">
+          <h4><?php echo $publication_title; ?></h4>
+          <div><div class="body_small"><?php echo substr($publication_text,0,120); ?>...</div></div>
+        </div>
+        <div><button class="button_white button_text_white">Читать дальше</button></div>
+      </div>
+      <?php } ?>
+    </div>
+    <div class="btn_public"><button class="button_blue button_text_blue">Показать всех</button></div>
+    </div>
+   </div>
+</div>
+
+<div class="partners">
+  <div class="container">
+    <div class="partners-info">
+     <div><h2>Партнеры ИТ-Диалог</h2></div>
+     <div class="partners-blocks">
+      <?php foreach($partners_list as $formatted_value) {
+        $partner_title = $formatted_value["title"];
+        $partner_link = $formatted_value["link"];
+        $partner_photo = $formatted_value["photo"];
+      ?>
+       <div class="partner-block"><a href="<?php echo $partner_link; ?>"><img src="<?php echo $partner_photo; ?>" alt="partner"></a></div>
+       <?php } ?>
+     </div>
+  </div>
+</div>
+</div>
+
+<div class="connection_page">
+  <div class="container">
+   <div class="connections">
+    <div><h2>Свяжитесь с нами</h2></div>
+    <div class="connection-info">
+      <div class="connection">
+        <div class="connect_human">
+          <div class="connect_human_photo"><img src="/dist/user/images/User.png" alt="User"></div>
+          <div class="connect_human_name">
+            <div><h3>Хохолева Александра</h3></div>
+            <div class="body_small">Коммерческий директор</div>
+          </div>
+        </div>
+        <div class="human_links">
+            <div class="body_large">ak@itdigital.info</div>
+            <div class="body_large">+7 921 951-55-15</div>
+            <div class="body_large">
+              <div class="tg">
+              <div><img src="/dist/user/images/Telegram.png" alt="tg"></div>
+              <div>@Aqvada</div></div></div>
+          </div>
+      </div>
+
+      <div class="connection">
+        <div class="connect_human">
+          <div class="connect_human_photo"><img src="/dist/user/images/User.png" alt="User"></div>
+          <div class="connect_human_name">
+            <div><h3>Паулич Антон</h3></div>
+            <div class="body_small">Исполнительный директор</div>
+          </div>
+        </div>
+        <div class="human_links">
+            <div class="body_large">ak@itdigital.info</div>
+            <div class="body_large">+7 921 740-49-84</div>
+            <div class="body_large">
+              <div class="tg">
+              <div><img src="/dist/user/images/Telegram.png" alt="tg"></div>
+              <div>@AntonPaulich</div></div></div>
+          </div>
+      </div>
+   </div>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+  <div class="container">
+   <div class="footer-info">
+   <div class="left-footer">
+    <div class="it_dialog_logo"><img src="/dist/user/images/it_dialog_logo.png" alt="it_dialog_logo"></div>
+    <div class="left-footer-text">
+      <div class="body_small"><p>Санкт-Петербург,</p> ул. Воронежская, 33A, 2-й этаж</div>
+      <div class="body_small">© Ассоциация АПСИТИЦР, 2023.</div>
+    </div>
+   </div>
+   <div class="right-footer">
+    <div class="right-footer-links">
+      <div><img src="/dist/user/images/Vk.png" alt="Vk"></div>
+      <div><img src="/dist/user/images/Tg.png" alt="Tg"></div>
+      <div><img src="/dist/user/images/Wa.png" alt="Wa"></div>
+    </div>
+    <div class="right-footer-info">
+      <div class="footer-phone"><h4>+7 921 740-49-84</h4></div>
+      <div class="right-footer-text">
+        <div class="body_small">info@itdialog.info</div>
+        <div class="body_small">anton.p@pr-factor.ru</div>
+      </div>
+    </div>
+   </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

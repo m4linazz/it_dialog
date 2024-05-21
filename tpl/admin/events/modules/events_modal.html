@@ -1,0 +1,64 @@
+<div id="edit_<?php echo $events_id ?>" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+        <h2 class="uk-modal-title">Редактирование мероприятия</h2>
+        <p>Здесь можно отредактировать выбранное мероприятие. Учитывайте, что после добавления мероприятия оно сразу изменится в соответствующем блоке на основном сайте!</p>
+        <form action="/admin_events" enctype="multipart/form-data" method="POST">
+            <fieldset class="uk-fieldset">
+
+                <div class="uk-margin" hidden>
+                    <input name="event_edit_id" value="<?php echo $events_id; ?>">
+                    <input name="event_edit_photo_old" value="<?php echo $events_photo; ?>">
+                </div>
+        
+                <legend class="uk-legend">Название мероприятия</legend>
+                <div class="uk-margin">
+                    <input name="event_edit_title" class="uk-input" type="text" placeholder="Например: Конференция" value="<?php echo $events_title; ?>" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Дата проведения</legend>
+                <div class="uk-margin">
+                    <input name="event_edit_date" class="uk-input" type="text" placeholder="Например: <?php echo date('d F Y', time()) ?>" value="<?php echo $events_date; ?>" aria-label="Input">
+                </div>
+
+                <legend class="uk-legend">Фотография</legend>
+                <div class="uk-child-width-1-2 uk-text-left" uk-grid>
+                    <div>
+                        <div uk-form-custom="target: true">
+                            <input class="uk-input uk-width-expand" type="file" name="event_edit_photo" accept="image/jpeg,image/png" aria-label="Custom controls">
+                            <input class="uk-input uk-width-expand" type="text" placeholder="Выберите файл" aria-label="Custom controls" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="uk-text-right">Размер загружаемой фотографии не должен превышать 10 МБайт</p>
+                    </div>
+                </div>
+        
+            </fieldset>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
+                <button type="submit" name="event_edit" class="uk-button uk-button-primary">Отредактировать</button>
+            </p>
+        </form>
+    </div>
+</div>
+
+<div id="delete_<?php echo $events_id ?>" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-overflow-auto">
+        <h2 class="uk-modal-title">Удаление мероприятия</h2>
+        <p>Уверены, что хотите удалить выбранное мероприятие? После подтверждения действия, мероприятие также пропадёт из списка на основном сайте!</p>
+        <form action="/admin_events" enctype="multipart/form-data" method="POST">
+            <fieldset class="uk-fieldset">
+
+                <div class="uk-margin" hidden>
+                    <input name="event_delete_id" value="<?php echo $events_id; ?>">
+                    <input name="event_delete_photo" value="<?php echo $events_photo; ?>">
+                </div>
+        
+            </fieldset>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
+                <button type="submit" name="event_delete" class="uk-button uk-button-primary">Удалить</button>
+            </p>
+        </form>
+    </div>
+</div>
